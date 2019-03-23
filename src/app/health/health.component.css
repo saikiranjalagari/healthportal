@@ -1,0 +1,11 @@
+.col-md-12{
+    background-color: #2488A3;
+    border-radius: 5px;
+}
+.titleClass{margin-top:5px;color: #fff;}
+.noClass{
+    background-color: #FC4848;color: #fff;
+}
+.yesClass{
+    background-color: green;color: #fff;
+}

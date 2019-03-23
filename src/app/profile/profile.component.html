@@ -1,0 +1,172 @@
+<form> 
+<div class="container">
+<h2>Profile</h2>
+
+  <div class="Profile">
+       
+      <h4>Tell us about yourself </h4>
+      <div class = "badge">1</div>
+       
+         <div class="row">
+            <div class="col-md-3">
+              <div class="formgroup">
+               <label for="zipcode">
+               ZipCode<sup class='text-danger star'>*</sup>
+               </label>
+                   <input type="text" class="form-control inputControlBoxshadow" placeholder="zipcode" name="zipcode" >
+               </div>
+              </div>
+            <div class="col-md-3">
+              <div class="formgroup">
+                 <label for="Country">
+                 Country<sup class='text-danger star'>*</sup>
+                 </label>
+                 <select class="form-control inputControlBoxshadow">
+                    <option value="">Select Country</option>
+                    <option  *ngFor="let data of countriesData"> {{data.countryName}}</option>
+                  </select>
+               </div>
+            </div>
+  
+             <div class="col-md-3">
+               <div class="formgroup">
+                 <label for="Coverage Year">
+                   Coverage Year<sup class='text-danger star'>*</sup>
+                  </label>
+                  <select class="form-control inputControlBoxshadow">
+                     <option value="">2019</option>
+                     <option  *ngFor="let data of countriesData"> {{data.coverage}}</option>
+                   </select>
+                </div>
+              </div>
+    
+  
+          </div>    
+    
+
+
+  </div>
+   
+
+
+  
+  
+
+
+
+
+<div class="Profile">
+    <h4>Build your household </h4>
+    <div class = "badge">2</div>
+    
+      <div class="row">
+        <div class="col-md-3">
+          <div class="formgroup">
+              <label for="age">
+                Age<sup class='text-danger star'>*</sup>
+              </label>
+              <input type="text" class="form-control inputControlBoxshadow" placeholder="age" name="age" >
+            </div>
+        </div>
+         <div class="col-md-3" style="padding: 30px;">
+
+            <input type="checkbox" name="lady" value="Pregnant"> Pregnant<sup class='text-danger star'>*</sup>
+
+        </div>>
+    
+      </div>
+    
+      
+      
+    
+</div>
+
+
+
+
+
+
+<div class="Profile">
+    <h4>You may qualify for lower costs </h4>
+  
+      <p> You may qualify for financial help to make health coverage more affordable, depending on your income and some other factors, such as whether you could get coverage through your employer or another program suchas Medicare, and your citizenship or immigration status and tax-filing status. </p>
+
+    <div class = "badge">3</div>
+    <form>
+
+        <div class="container">
+           <div class="row">
+        
+            <div class="col-md-3">
+               <div class="formgroup">
+              <label for="household">
+                Household<sup class='text-danger star'>*</sup>
+              </label>
+              <input type="text" class="form-control inputControlBoxshadow" placeholder="household" name="household" >
+            </div>
+          </div>
+        
+           <div class="col-md-3">
+            <div class="formgroup">
+                <label for="frequency">
+                    Frequency<sup class='text-danger star'>*</sup>
+                </label>
+                <input type="text" class="form-control inputControlBoxshadow" placeholder="frequency" name="frequency" >
+              </div>
+             </div>
+
+            <div class="col-md-6">
+              <div class="formgroup">
+                  <label for="your annual income is">
+                      YOUR ANNUAL INCOME IS:<sup class='text-danger star'>*</sup>
+                  </label>
+                  <input type="text" class="form-control inputControlBoxshadow" placeholder="your annual income is" name="yourannualincome is" >
+                </div>
+               </div>
+
+
+
+          </div>
+
+    </div>
+
+    
+      
+      
+    </form>
+
+
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

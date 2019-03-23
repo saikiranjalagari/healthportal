@@ -1,0 +1,85 @@
+
+<div class="container">
+
+    <li class="pagination justify-content-rigth" *ngIf="showPrevious">
+      <button class="page-link" (click)="changePaginationIndex($event, 'previous')">Previous</button>
+    </li>
+    <ul class="pagination justify-content-rigth" *ngFor= "let index of pagination(healthPlansData.length, 3)" >
+ 
+          <li class="page-item" ><button class="page-link" (click)="changePaginationIndex($event)">{{index}}</button></li>
+
+    </ul>
+  <li class="pagination justify-content-rigth" *ngIf="showNext">
+    <button class="page-link" (click)="changePaginationIndex($event, 'next')">Next</button>
+  </li>
+<!-- <ul class="pagination justify-content-rigth">
+  <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+  <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+  <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+  <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+  <li class="page-item"><a class="page-link" href="javascript:void(0);">4</a></li>
+  <li class="page-item"><a class="page-link" href="javascript:void(0);">5</a></li>
+  <li class="page-item"><a class="page-link" href="javascript:void(0);">6</a></li>
+  <li class="page-item"><a class="page-link" href="javascript:void(0);">7</a></li>
+  <li class="page-item"><a class="page-link" href="javascript:void(0);">8</a></li>
+  <li class="page-item"><a class="page-link" href="javascript:void(0);">9</a></li>
+  <li class="page-item"><a class="page-link" href="javascript:void(0);">10</a></li>
+  <li class="page-item"><a class="page-link" href="javascript:void(0);">11</a></li>
+  <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+</ul> -->
+
+<section>
+  <div class="well" *ngFor= "let data of healthPlansData.slice(startIndex,endIndex)">
+    <div class="row">
+        <div class="col-md-7">
+          logo
+     
+        </div>
+        <div class="col-md-3">
+     
+        </div>
+        <div class="col-md-2">
+
+          Quality Rating
+          <p>H.S.A Eligible
+
+         <span class="{{data.hsaEligible == 'Yes' ? 'badge yesClass' :' badge noClass'}}"> {{ data.hsaEligible}} </span>
+        </p>
+     
+        </div>
+     </div>
+
+     <div class="row">
+       <div class="col-md-12">
+         <h1 class="titleClass">{{data.PlanNa}}</h1>
+     
+       </div>
+     </div>
+
+     <div class="row">
+       <div class="col-md-6 col-sm-6">
+         <p>Est.Mthly.Premium</p>
+         <p>Ann.Out-of-pocket Max</p>
+         <p>Emergency Room</p>
+         <p>Primary Care Co-pay</p>
+         <p>Annual Deductible</p>
+
+     
+       </div>
+       <div class="col-md-6 col-sm-6">
+          <p>{{data.adjPremium}}</p>
+          <p>{{data.plnsummAnnualOopocketMaxam}}</p>
+          <p>{{data.plnsummEmrgncyRoomAm}}</p>
+          <p>{{data.plnsummPrmryCareCopayAm}}</p>
+          <p>{{data.plnsummAnnualDeductAm}}</p>
+
+     
+       </div>
+     </div>
+    </div>
+</section>
+
+
+</div>
+
+

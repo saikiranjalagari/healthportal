@@ -1,0 +1,29 @@
+.Profile{
+    
+    border-bottom: 1px solid black;
+    padding-bottom: 80px;
+}
+h4{
+    color: #996600;
+}
+.num{
+    background-color: grey;
+}
+.badge{
+    float: left;
+    padding: 10px;
+}
+p{
+    float: left;
+    padding-left: 15px;
+}
+.inputControlBoxshadow{
+    box-shadow: 0px 5px 5px 0px #FFB6B6;
+
+}
+.span{
+    color: red;
+}
+.star{
+    font-size: 15px;
+}
